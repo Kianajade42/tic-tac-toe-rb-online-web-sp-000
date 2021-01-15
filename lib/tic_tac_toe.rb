@@ -51,6 +51,7 @@ def won(board)
      board[win[1]] == board[win[2]] &&
      position_taken?(board, win[0])
  end
+ end
 def full?(board)
   board.all? { |symbol| symbol == 'X' || symbol == 'O' }
 end
