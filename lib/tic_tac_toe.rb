@@ -68,3 +68,12 @@ def winner(board)
     board[winning_combo.first]
   end
 end
+
+def play(board)
+  turn(board) until over?(board)
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif draw?(board)
+    puts "It's a draw!"
+  end
+end
