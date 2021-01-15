@@ -50,7 +50,7 @@ def won(board)
    board[win[0]] == board[win[1]] &&
      board[win[1]] == board[win[2]] &&
      position_taken?(board, win[0])
-   if draw puts false 
+   if draw puts false
    else puts true 
  end
 end
