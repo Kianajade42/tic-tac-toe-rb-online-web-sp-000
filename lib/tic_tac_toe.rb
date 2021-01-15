@@ -52,6 +52,8 @@ def won(board)
      position_taken?(board, win[0])
    if draw puts false
    else puts true 
+   end
+ end
  end
 end
 def full?(board)
